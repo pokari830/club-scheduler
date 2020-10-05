@@ -1,0 +1,9 @@
+= render 'users/header'
+
+.contents
+  = form_for @schedule do |f|
+    .form
+      = f.text_field :title, placeholder: "Title", class: "form__title"
+      = f.date_field :date, class:"form__date"
+      = f.text_area :details, placeholder: "詳細", class: "form__details"
+      = f.submit 'Send', class: "form__btn"

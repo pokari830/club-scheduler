@@ -1,0 +1,12 @@
+= render partial: 'users/header'
+
+.contents
+  - @schedules.each do |schedule|
+    .content
+      = link_to schedule_path(schedule) do
+        .date
+          = schedule.date
+        .title
+          = schedule.title
+  .paginate
+    = paginate @schedules

@@ -1,0 +1,19 @@
+= render partial: 'users/header'
+
+.contents
+  .show
+    %p Date
+    .show__date
+      = @schedule.date
+
+    %p Title
+    .show__title
+      = @schedule.details
+
+    %p Detail
+    .show__details
+      = @schedule.title
+
+    .back
+      = link_to schedules_path do
+        %p Back
