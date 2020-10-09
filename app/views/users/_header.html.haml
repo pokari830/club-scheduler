@@ -1,6 +1,7 @@
 .user__header
-  .user__name
-    = link_to current_user.name, root_path
+  .user__name--box
+    .user__name
+      = link_to current_user.name, root_path
   .icons
     = link_to new_schedule_path class: "icon" do
       = icon("fas", "edit")

@@ -15,9 +15,18 @@ a{
   text-align: center;
   line-height: 100px;
   justify-content: space-between;
-  .user__name{
-    font-size: 25px;
+  .user__name--box{
     width: 150px;
+    height: 30px;
+    .user__name{
+      font-size: 18px;
+      a{
+        background-color: white;
+        height: 30px;
+        padding: 15px 5px;
+        border-radius: 0px 10px;
+      }
+    }
   }
   .icons{
     width: 100px;
