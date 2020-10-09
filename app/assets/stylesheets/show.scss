@@ -1,6 +1,6 @@
 .show{
   width: 800px;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   font-size: 20px;
 
@@ -26,5 +26,10 @@
   p{
     margin-bottom: 5px;
     color: dimgrey;
+  }
+  .back{
+    p:hover{
+      color: #ff7070;
+    }
   }
 }
